@@ -1,0 +1,877 @@
+<!DOCTYPE html>
+<html lang="ro">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="referrer" content="no-referrer-when-downgrade" />
+
+    <!-- SEO -->
+    <title>Parchetar București - Vasile Doncila | Montaj & Recondiționare Parchet</title>
+    <meta
+      name="description"
+      content="Parchetar profesionist în București, peste 25 de ani de experiență. Montaj și recondiționare parchet masiv, stratificat, laminat. Deviz gratuit la fața locului."
+    />
+    <meta
+      name="keywords"
+      content="parchetar Bucuresti, montaj parchet Bucuresti, reconditionare parchet vechi, raschetare parchet, parchet masiv, parchet stratificat, parchet laminat"
+    />
+
+    <!-- Security-related meta (parțial, GitHub Pages poate suprascrie) -->
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self' https://cdn.tailwindcss.com https://formspree.io https://www.google.com https://maps.googleapis.com; img-src 'self' data: https://*; style-src 'self' 'unsafe-inline' https://cdn.tailwindcss.com; script-src 'self' 'unsafe-inline' https://cdn.tailwindcss.com https://www.google.com https://maps.googleapis.com; base-uri 'self'; form-action 'self' https://formspree.io;"
+    />
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              woodLight: "#f7eee4",
+              woodMedium: "#c59b6d",
+              woodDark: "#5a3b23",
+              charcoal: "#343a40",
+            },
+            fontFamily: {
+              sans: ["system-ui", "Segoe UI", "-apple-system", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="bg-woodLight text-charcoal font-sans antialiased">
+    <!-- Navbar -->
+    <header
+      class="sticky top-0 z-30 bg-white/90 backdrop-blur shadow-sm border-b border-woodMedium/20"
+    >
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between py-3">
+        <div class="flex items-center gap-3">
+          <div
+            class="h-10 w-10 rounded-full bg-woodMedium text-white flex items-center justify-center font-semibold"
+          >
+            VD
+          </div>
+          <div>
+            <p class="font-semibold text-sm sm:text-base" id="brandName">
+              Vasile Doncila - Parchetar Profesionist
+            </p>
+            <p class="text-xs text-gray-500" id="brandSubtitle">Peste 25 de ani experiență în București</p>
+          </div>
+        </div>
+        <nav class="hidden md:flex gap-6 text-sm font-medium">
+          <a href="#servicii" class="hover:text-woodDark transition-colors">Servicii</a>
+          <a href="#portofoliu" class="hover:text-woodDark transition-colors">Portofoliu</a>
+          <a href="#testimoniale" class="hover:text-woodDark transition-colors">Testimoniale</a>
+          <a href="#faq" class="hover:text-woodDark transition-colors">Întrebări frecvente</a>
+          <a
+            href="#contact"
+            class="bg-woodDark text-white px-4 py-2 rounded-full shadow hover:bg-woodMedium transition-colors"
+            >Contact</a
+          >
+        </nav>
+        <button
+          id="mobileMenuToggle"
+          aria-label="Deschide meniul"
+          class="md:hidden inline-flex items-center justify-center p-2 rounded-md text-charcoal hover:bg-woodLight focus:outline-none focus:ring-2 focus:ring-woodMedium"
+        >
+          <span class="sr-only">Deschide meniul</span>
+          <svg
+            class="h-6 w-6"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+      <nav
+        id="mobileMenu"
+        class="md:hidden hidden border-t border-woodMedium/20 bg-white/95 backdrop-blur-sm"
+      >
+        <div class="px-4 pt-2 pb-4 space-y-2 text-sm font-medium">
+          <a href="#servicii" class="block py-1 hover:text-woodDark">Servicii</a>
+          <a href="#portofoliu" class="block py-1 hover:text-woodDark">Portofoliu</a>
+          <a href="#testimoniale" class="block py-1 hover:text-woodDark">Testimoniale</a>
+          <a href="#faq" class="block py-1 hover:text-woodDark">Întrebări frecvente</a>
+          <a
+            href="#contact"
+            class="block py-2 text-center bg-woodDark text-white rounded-full shadow hover:bg-woodMedium"
+            >Contact</a
+          >
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Hero -->
+      <section
+        id="hero"
+        class="relative overflow-hidden bg-gradient-to-br from-woodLight via-white to-woodLight"
+      >
+        <div
+          class="absolute inset-0 bg-[url('https://images.pexels.com/photos/6956443/pexels-photo-6956443.jpeg?auto=compress&cs=tinysrgb&w=1600')] opacity-10 bg-cover bg-center"
+          aria-hidden="true"
+        ></div>
+        <div class="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24 grid lg:grid-cols-2 gap-12">
+          <div class="flex flex-col justify-center space-y-6">
+            <p
+              class="inline-flex items-center gap-2 text-sm font-semibold text-woodDark bg-woodLight border border-woodMedium/30 rounded-full px-3 py-1 w-fit"
+            >
+              <span id="heroBadgeText">Peste 25 de ani de experiență în București</span>
+            </p>
+            <h1
+              id="heroTitle"
+              class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-charcoal leading-tight"
+            >
+              Parchetar profesionist în București – montaj și recondiționare parchet la standarde premium
+            </h1>
+            <p id="heroSubtitle" class="text-base sm:text-lg text-gray-700 max-w-xl">
+              Specializat în parchet masiv, stratificat și laminat. Rașchetare fără praf, recondiționare parchet vechi
+              și consultanță completă în alegerea materialelor potrivite pentru casa ta.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4">
+              <a
+                href="#contact"
+                class="inline-flex items-center justify-center px-6 py-3 rounded-full bg-woodDark text-white font-semibold shadow-lg shadow-woodDark/30 hover:bg-woodMedium transition-colors"
+              >
+                Solicită deviz gratuit
+              </a>
+              <a
+                href="#servicii"
+                class="inline-flex items-center justify-center px-6 py-3 rounded-full border border-woodMedium text-woodDark font-semibold bg-white/70 hover:bg-woodLight transition-colors"
+              >
+                Vezi toate serviciile
+              </a>
+            </div>
+            <div class="flex flex-wrap gap-6 text-sm text-gray-700 pt-4 border-t border-woodMedium/20">
+              <div class="flex items-center gap-2">
+                <span class="h-2 w-2 rounded-full bg-green-500"></span>
+                <span id="heroBullet1">Lucrăm cu unelte profesionale cu aspirare – minim de praf în locuință</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <span class="h-2 w-2 rounded-full bg-green-500"></span>
+                <span id="heroBullet2">Garanție pentru manoperă și consultație tehnică înainte de lucrare</span>
+              </div>
+            </div>
+          </div>
+          <div
+            class="relative rounded-3xl overflow-hidden border border-woodMedium/40 shadow-xl bg-woodMedium"
+          >
+            <div class="absolute inset-0 bg-gradient-to-tr from-woodDark/60 via-woodMedium/40 to-woodLight/20"></div>
+            <div class="relative p-6 sm:p-8 flex flex-col gap-4 text-woodLight">
+              <p class="text-sm font-semibold uppercase tracking-wide text-white">
+                Expertiză & transparență
+              </p>
+              <p id="heroBoxText" class="text-lg sm:text-xl font-semibold text-white">
+                Deviz clar înainte de lucrare, fără costuri ascunse. Verificăm umiditatea șapei și condițiile de montaj
+                pentru o lucrare durabilă.
+              </p>
+              <div class="grid grid-cols-2 gap-4 mt-2 text-sm">
+                <div class="bg-black/20 rounded-xl p-3">
+                  <p class="text-xs text-woodLight/90">Experiență</p>
+                  <p id="heroStatsYears" class="text-2xl font-bold text-white">25+ ani</p>
+                  <p class="text-xs text-woodLight/90">în București și Ilfov</p>
+                </div>
+                <div class="bg-black/20 rounded-xl p-3">
+                  <p class="text-xs text-woodLight/90">Lucrări finalizate</p>
+                  <p id="heroStatsProjects" class="text-2xl font-bold text-white">900+</p>
+                  <p class="text-xs text-woodLight/90">apartamente & case</p>
+                </div>
+              </div>
+              <div class="mt-4 text-sm">
+                <p class="font-semibold mb-1 text-white">Programare rapidă telefonic:</p>
+                <a
+                  id="heroPhone"
+                  href="tel:+40000000000"
+                  class="inline-flex items-center gap-2 text-woodLight font-semibold text-lg"
+                >
+                  <span class="inline-block h-2 w-2 rounded-full bg-green-400"></span>
+                  <span>+40 000 000 000</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Servicii -->
+      <section id="servicii" class="py-16 lg:py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6 mb-10">
+            <div>
+              <h2 class="text-2xl sm:text-3xl font-bold text-charcoal mb-2">Servicii de parchet complete</h2>
+              <p id="servicesIntro" class="text-gray-700 max-w-2xl">
+                De la montajul parchetului nou până la readucerea la viață a parchetului vechi, oferim soluții
+                complete, adaptate fiecărui tip de locuință.
+              </p>
+            </div>
+            <div class="bg-woodLight border border-woodMedium/30 rounded-2xl px-4 py-3 text-sm text-gray-700 max-w-sm">
+              <p class="font-semibold mb-1">Estimare rapidă telefonic sau pe WhatsApp.</p>
+              <p id="servicesNote">
+                Trimite câteva poze cu pardoseala actuală și suprafața aproximativă, iar noi îți oferim un interval de
+                preț estimativ.
+              </p>
+            </div>
+          </div>
+
+          <div id="servicesList" class="grid gap-6 md:grid-cols-2 lg:grid-cols-3"></div>
+        </div>
+      </section>
+
+      <!-- De ce să ne alegi -->
+      <section id="beneficii" class="py-16 lg:py-20 bg-woodLight/60 border-y border-woodMedium/20">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="grid lg:grid-cols-2 gap-12 items-start">
+            <div>
+              <h2 class="text-2xl sm:text-3xl font-bold text-charcoal mb-3">De ce să lucrați cu noi</h2>
+              <p id="benefitsIntro" class="text-gray-700 mb-6 max-w-xl">
+                Lucrăm ca și cum am lucra în propria casă: cu atenție la detalii, curățenie și respect pentru
+                programul dumneavoastră.
+              </p>
+              <ul id="benefitsList" class="space-y-4"></ul>
+            </div>
+            <div
+              class="bg-white/90 rounded-3xl border border-woodMedium/30 shadow-lg shadow-woodMedium/10 p-6 sm:p-8"
+            >
+              <h3 class="text-lg font-semibold mb-4">Tarife orientative</h3>
+              <p id="pricingNote" class="text-sm text-gray-600 mb-4">
+                Prețurile pot varia în funcție de starea suportului, suprafață și tipul de parchet. Pentru un deviz
+                corect, este necesară vizita la fața locului.
+              </p>
+              <dl id="pricingList" class="space-y-3 text-sm"></dl>
+              <p class="mt-4 text-xs text-gray-500">
+                * Prețurile nu includ materiale (lac, adeziv, plinte), acestea se pot oferi separat în funcție de
+                preferințe.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Portofoliu -->
+      <section id="portofoliu" class="py-16 lg:py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-8">
+            <div>
+              <h2 class="text-2xl sm:text-3xl font-bold text-charcoal mb-2">Portofoliu lucrări</h2>
+              <p id="portfolioIntro" class="text-gray-700 max-w-2xl">
+                Câteva exemple de lucrări realizate în apartamente, case și spații comerciale din București și Ilfov.
+              </p>
+            </div>
+            <p class="text-xs text-gray-500 max-w-xs" id="portfolioNote">
+              * Imaginile sunt cu titlu de prezentare. Puteți înlocui oricând aceste poze cu portofoliul propriu, din
+              fișierul de configurare.
+            </p>
+          </div>
+
+          <div id="portfolioGrid" class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3"></div>
+        </div>
+      </section>
+
+      <!-- Testimoniale & FAQ -->
+      <section id="testimoniale" class="py-16 lg:py-20 bg-woodLight/60 border-y border-woodMedium/20">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="grid lg:grid-cols-2 gap-10 lg:gap-16 items-start">
+            <!-- Testimoniale -->
+            <div>
+              <h2 class="text-2xl sm:text-3xl font-bold text-charcoal mb-3">Ce spun clienții</h2>
+              <p id="testimonialsIntro" class="text-gray-700 mb-6 max-w-xl">
+                Majoritatea lucrărilor provin din recomandări directe. Ne concentrăm pe calitate și comunicare clară,
+                de la prima vizită până la predarea lucrării.
+              </p>
+              <div id="testimonialsList" class="space-y-4"></div>
+            </div>
+
+            <!-- FAQ -->
+            <div id="faq" class="bg-white/90 rounded-3xl border border-woodMedium/30 shadow p-6 sm:p-8">
+              <h2 class="text-xl sm:text-2xl font-bold text-charcoal mb-4">Întrebări frecvente</h2>
+              <p id="faqIntro" class="text-sm text-gray-700 mb-4">
+                Răspunsuri la cele mai des întâlnite întrebări despre pregătirea șapei, umiditate și etapele lucrării.
+              </p>
+              <div id="faqList" class="space-y-3"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact" class="py-16 lg:py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="grid lg:grid-cols-2 gap-10 lg:gap-16">
+            <div>
+              <h2 class="text-2xl sm:text-3xl font-bold text-charcoal mb-3">Contact & programări</h2>
+              <p id="contactIntro" class="text-gray-700 mb-6 max-w-lg">
+                Pentru o ofertă corectă, cel mai bine este să programăm o vizită la fața locului. Completați formularul
+                sau sunați direct pentru detalii rapide.
+              </p>
+
+              <div class="space-y-3 text-sm text-gray-800 mb-6">
+                <div class="flex items-start gap-3">
+                  <span class="mt-1 text-woodDark" aria-hidden="true">📞</span>
+                  <div>
+                    <p class="font-semibold">Telefon</p>
+                    <a
+                      id="contactPhone"
+                      href="tel:+40000000000"
+                      class="text-woodDark font-semibold hover:underline"
+                    >
+                      +40 000 000 000
+                    </a>
+                  </div>
+                </div>
+                <div class="flex items-start gap-3">
+                  <span class="mt-1 text-woodDark" aria-hidden="true">📧</span>
+                  <div>
+                    <p class="font-semibold">E-mail</p>
+                    <a
+                      id="contactEmail"
+                      href="mailto:exemplu@parchet-bucuresti.ro"
+                      class="hover:underline"
+                    >
+                      exemplu@parchet-bucuresti.ro
+                    </a>
+                  </div>
+                </div>
+                <div class="flex items-start gap-3">
+                  <span class="mt-1 text-woodDark" aria-hidden="true">📍</span>
+                  <div>
+                    <p class="font-semibold">Zonă de lucru</p>
+                    <p id="contactArea">București și Ilfov</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="rounded-2xl overflow-hidden border border-woodMedium/30 bg-woodLight h-56">
+                <iframe
+                  id="contactMap"
+                  title="Hartă locație"
+                  class="w-full h-full border-0"
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+            </div>
+
+            <!-- Formspree contact form -->
+            <div class="bg-woodLight/60 rounded-3xl border border-woodMedium/40 shadow p-6 sm:p-8">
+              <h3 class="text-xl font-semibold mb-2">Solicită un deviz gratuit</h3>
+              <p class="text-sm text-gray-700 mb-4">
+                Completați formularul cu câteva detalii despre lucrare, iar noi vă contactăm pentru stabilirea unei
+                vizite și a prețului final.
+              </p>
+              <form
+                id="contactForm"
+                method="POST"
+                class="space-y-4"
+                novalidate
+              >
+                <input type="hidden" name="_subject" value="Cerere deviz nouă - Site Vasile Doncila" />
+
+                <div>
+                  <label for="name" class="block text-sm font-medium text-charcoal mb-1">Nume complet</label>
+                  <input
+                    id="name"
+                    name="name"
+                    type="text"
+                    required
+                    minlength="3"
+                    maxlength="100"
+                    autocomplete="name"
+                    class="w-full rounded-lg border border-woodMedium/40 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-woodMedium focus:border-woodMedium bg-white"
+                  />
+                  <p class="mt-1 text-xs text-gray-500">Ex: Popescu Ion</p>
+                </div>
+
+                <div>
+                  <label for="email" class="block text-sm font-medium text-charcoal mb-1">E-mail</label>
+                  <input
+                    id="email"
+                    name="email"
+                    type="email"
+                    required
+                    maxlength="150"
+                    autocomplete="email"
+                    class="w-full rounded-lg border border-woodMedium/40 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-woodMedium focus:border-woodMedium bg-white"
+                  />
+                </div>
+
+                <div>
+                  <label for="phone" class="block text-sm font-medium text-charcoal mb-1">Telefon</label>
+                  <input
+                    id="phone"
+                    name="phone"
+                    type="tel"
+                    required
+                    maxlength="25"
+                    autocomplete="tel"
+                    class="w-full rounded-lg border border-woodMedium/40 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-woodMedium focus:border-woodMedium bg-white"
+                  />
+                  <p class="mt-1 text-xs text-gray-500">
+                    Ex: 07xx xxx xxx – pentru confirmare și stabilirea vizitei.
+                  </p>
+                </div>
+
+                <div>
+                  <label for="message" class="block text-sm font-medium text-charcoal mb-1">Detalii lucrare</label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    rows="4"
+                    required
+                    minlength="10"
+                    maxlength="1000"
+                    class="w-full rounded-lg border border-woodMedium/40 px-3 py-2 text-sm resize-vertical focus:outline-none focus:ring-2 focus:ring-woodMedium focus:border-woodMedium bg-white"
+                    placeholder="Ex: Tip parchet, suprafață aproximativă, locație, termen dorit..."
+                  ></textarea>
+                </div>
+
+                <div class="flex items-start gap-2 text-xs text-gray-600">
+                  <input
+                    id="gdpr"
+                    name="gdpr"
+                    type="checkbox"
+                    required
+                    class="mt-1 h-4 w-4 rounded border-woodMedium/50 text-woodDark focus:ring-woodMedium"
+                  />
+                  <label for="gdpr">
+                    Sunt de acord ca datele introduse să fie folosite strict pentru a fi contactat în legătură cu
+                    cererea mea de ofertă.
+                  </label>
+                </div>
+
+                <div id="formErrors" class="text-xs text-red-600 space-y-1 hidden"></div>
+                <p id="formSuccess" class="text-xs text-green-700 hidden">
+                  Mesajul a fost trimis. Vă mulțumim! Vă vom contacta în cel mai scurt timp.
+                </p>
+
+                <button
+                  type="submit"
+                  class="w-full inline-flex items-center justify-center px-4 py-2.5 rounded-full bg-woodDark text-white text-sm font-semibold shadow hover:bg-woodMedium focus:outline-none focus:ring-2 focus:ring-woodMedium"
+                >
+                  Trimite cererea
+                </button>
+
+                <p class="text-[11px] text-gray-500">
+                  Formularul este securizat prin Formspree. Nu trimitem newslettere și nu cedăm datele către terți.
+                </p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-charcoal text-woodLight text-xs">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex flex-col sm:flex-row gap-2 sm:items-center sm:justify-between">
+        <p id="footerText">
+          © <span id="footerYear"></span> Vasile Doncila – Parchetar profesionist în București. Toate drepturile
+          rezervate.
+        </p>
+        <p class="text-[11px] text-gray-400">
+          Site static optimizat pentru viteză – găzduire GitHub Pages.
+        </p>
+      </div>
+    </footer>
+
+    <!-- Config cu date și texte -->
+    <script src="config.js"></script>
+
+    <!-- JS simplu pentru populare conținut + validare formular -->
+    <script>
+      (function () {
+        "use strict";
+
+        // Verificăm existența configurației globale
+        if (typeof window.siteConfig !== "object" || window.siteConfig === null) {
+          console.error("Configurația site-ului (siteConfig) nu este definită sau nu este un obiect.");
+          return;
+        }
+        const config = window.siteConfig;
+
+        /**
+         * Escapare caractere periculoase pentru a preveni XSS
+         * (folosită doar dacă, în viitor, ai nevoie de injectare ca HTML).
+         */
+        function sanitizeString(str) {
+          if (typeof str !== "string") return "";
+          return str
+            .replace(/&/g, "&amp;")
+            .replace(/</g, "&lt;")
+            .replace(/>/g, "&gt;")
+            .replace(/"/g, "&quot;")
+            .replace(/'/g, "&#39;");
+        }
+
+        /**
+         * Helper: setează în siguranță textul unui element (folosim textContent, nu innerHTML).
+         */
+        function setText(id, value) {
+          var el = document.getElementById(id);
+          if (el && typeof value === "string") {
+            el.textContent = value;
+          }
+        }
+
+        /**
+         * Populăm conținutul din config.js
+         */
+        function populateContent() {
+          // Brand & hero
+          if (config.brand) {
+            setText("brandName", config.brand.name);
+            setText("brandSubtitle", config.brand.subtitle);
+            document.title = config.brand.pageTitle || document.title;
+          }
+
+          if (config.hero) {
+            setText("heroBadgeText", config.hero.badge);
+            setText("heroTitle", config.hero.title);
+            setText("heroSubtitle", config.hero.subtitle);
+            setText("heroBullet1", config.hero.bullets && config.hero.bullets[0]);
+            setText("heroBullet2", config.hero.bullets && config.hero.bullets[1]);
+            setText("heroBoxText", config.hero.boxText);
+            setText("heroStatsYears", config.hero.stats && config.hero.stats.years);
+            setText("heroStatsProjects", config.hero.stats && config.hero.stats.projects);
+          }
+
+          if (config.services) {
+            setText("servicesIntro", config.services.intro);
+            setText("servicesNote", config.services.note);
+
+            var servicesList = document.getElementById("servicesList");
+            if (servicesList && Array.isArray(config.services.items)) {
+              servicesList.textContent = "";
+              config.services.items.forEach(function (service) {
+                var div = document.createElement("article");
+                div.className =
+                  "rounded-2xl border border-woodMedium/30 bg-woodLight/60 p-4 sm:p-5 flex flex-col h-full";
+
+                var title = document.createElement("h3");
+                title.className = "text-base sm:text-lg font-semibold mb-1 text-charcoal";
+                title.textContent = service.title || "";
+                div.appendChild(title);
+
+                var desc = document.createElement("p");
+                desc.className = "text-sm text-gray-700 mb-2 flex-1";
+                desc.textContent = service.description || "";
+                div.appendChild(desc);
+
+                if (Array.isArray(service.details) && service.details.length > 0) {
+                  var ul = document.createElement("ul");
+                  ul.className = "text-xs text-gray-700 space-y-1 mb-3";
+                  service.details.forEach(function (d) {
+                    var li = document.createElement("li");
+                    li.textContent = "• " + d;
+                    ul.appendChild(li);
+                  });
+                  div.appendChild(ul);
+                }
+
+                if (service.price) {
+                  var price = document.createElement("p");
+                  price.className = "text-sm font-semibold text-woodDark";
+                  price.textContent = service.price;
+                  div.appendChild(price);
+                }
+
+                servicesList.appendChild(div);
+              });
+            }
+          }
+
+          if (config.benefits) {
+            setText("benefitsIntro", config.benefits.intro);
+            var benefitsList = document.getElementById("benefitsList");
+            if (benefitsList && Array.isArray(config.benefits.items)) {
+              benefitsList.textContent = "";
+              config.benefits.items.forEach(function (b) {
+                var li = document.createElement("li");
+                li.className = "flex items-start gap-3";
+
+                var icon = document.createElement("span");
+                icon.className =
+                  "mt-1 inline-flex h-6 w-6 items-center justify-center rounded-full bg-woodDark text-white text-xs";
+                icon.textContent = b.icon || "✓";
+                li.appendChild(icon);
+
+                var wrapper = document.createElement("div");
+                var title = document.createElement("p");
+                title.className = "text-sm font-semibold text-charcoal";
+                title.textContent = b.title || "";
+                wrapper.appendChild(title);
+
+                var desc = document.createElement("p");
+                desc.className = "text-xs text-gray-700";
+                desc.textContent = b.description || "";
+                wrapper.appendChild(desc);
+
+                li.appendChild(wrapper);
+                benefitsList.appendChild(li);
+              });
+            }
+          }
+
+          if (config.pricing) {
+            setText("pricingNote", config.pricing.note);
+            var pricingList = document.getElementById("pricingList");
+            if (pricingList && Array.isArray(config.pricing.items)) {
+              pricingList.textContent = "";
+              config.pricing.items.forEach(function (p) {
+                var row = document.createElement("div");
+
+                var dt = document.createElement("dt");
+                dt.className = "font-semibold text-charcoal";
+                dt.textContent = p.label || "";
+
+                var dd = document.createElement("dd");
+                dd.className = "text-xs text-gray-700";
+                dd.textContent = p.value || "";
+
+                row.appendChild(dt);
+                row.appendChild(dd);
+                pricingList.appendChild(row);
+              });
+            }
+          }
+
+          if (config.portfolio) {
+            setText("portfolioIntro", config.portfolio.intro);
+            setText("portfolioNote", config.portfolio.note);
+            var grid = document.getElementById("portfolioGrid");
+            if (grid && Array.isArray(config.portfolio.items)) {
+              grid.textContent = "";
+              config.portfolio.items.forEach(function (item) {
+                var card = document.createElement("article");
+                card.className =
+                  "group rounded-2xl overflow-hidden border border-woodMedium/30 bg-woodLight/60 shadow-sm flex flex-col";
+
+                var imgWrapper = document.createElement("div");
+                imgWrapper.className = "aspect-[4/3] bg-gray-200 overflow-hidden";
+                var img = document.createElement("img");
+                img.loading = "lazy";
+                img.decoding = "async";
+                img.src = item.imageUrl || "";
+                img.alt = item.alt || "";
+                img.className =
+                  "h-full w-full object-cover transition-transform duration-500 group-hover:scale-105";
+                imgWrapper.appendChild(img);
+
+                var content = document.createElement("div");
+                content.className = "p-4 space-y-1";
+
+                var title = document.createElement("h3");
+                title.className = "text-sm font-semibold text-charcoal";
+                title.textContent = item.title || "";
+                content.appendChild(title);
+
+                var loc = document.createElement("p");
+                loc.className = "text-xs text-gray-600";
+                loc.textContent = item.location || "";
+                content.appendChild(loc);
+
+                card.appendChild(imgWrapper);
+                card.appendChild(content);
+                grid.appendChild(card);
+              });
+            }
+          }
+
+          if (config.testimonials) {
+            setText("testimonialsIntro", config.testimonials.intro);
+            var tList = document.getElementById("testimonialsList");
+            if (tList && Array.isArray(config.testimonials.items)) {
+              tList.textContent = "";
+              config.testimonials.items.forEach(function (t) {
+                var card = document.createElement("figure");
+                card.className =
+                  "rounded-2xl border border-woodMedium/30 bg-white p-4 sm:p-5 shadow-sm relative overflow-hidden";
+
+                var quoteMark = document.createElement("span");
+                quoteMark.className =
+                  "absolute -top-4 -right-1 text-6xl text-woodLight/70 select-none pointer-events-none";
+                quoteMark.textContent = "„";
+                card.appendChild(quoteMark);
+
+                var text = document.createElement("blockquote");
+                text.className = "text-sm text-gray-800 mb-3 relative z-10";
+                text.textContent = t.text || "";
+                card.appendChild(text);
+
+                var fig = document.createElement("figcaption");
+                fig.className = "text-xs text-gray-600 relative z-10";
+                fig.textContent = (t.name || "") + (t.location ? " – " + t.location : "");
+                card.appendChild(fig);
+
+                tList.appendChild(card);
+              });
+            }
+          }
+
+          if (config.faq) {
+            setText("faqIntro", config.faq.intro);
+            var faqList = document.getElementById("faqList");
+            if (faqList && Array.isArray(config.faq.items)) {
+              faqList.textContent = "";
+              config.faq.items.forEach(function (item, index) {
+                var wrapper = document.createElement("details");
+                wrapper.className =
+                  "group rounded-2xl border border-woodMedium/30 bg-woodLight/70 px-3 py-2.5 text-sm";
+                if (index === 0) wrapper.open = true;
+
+                var summary = document.createElement("summary");
+                summary.className =
+                  "cursor-pointer list-none flex items-start justify-between gap-3 text-charcoal font-semibold";
+                summary.textContent = item.question || "";
+                wrapper.appendChild(summary);
+
+                var answer = document.createElement("p");
+                answer.className = "mt-2 text-xs text-gray-700";
+                answer.textContent = item.answer || "";
+                wrapper.appendChild(answer);
+
+                faqList.appendChild(wrapper);
+              });
+            }
+          }
+
+          if (config.contact) {
+            setText("contactIntro", config.contact.intro);
+            setText("contactArea", config.contact.area);
+
+            var phone = document.getElementById("contactPhone");
+            if (phone && config.contact.phone) {
+              phone.href = "tel:" + config.contact.phone;
+              phone.textContent = config.contact.phoneLabel || config.contact.phone;
+            }
+
+            var heroPhone = document.getElementById("heroPhone");
+            if (heroPhone && config.contact.phone) {
+              heroPhone.href = "tel:" + config.contact.phone;
+              heroPhone.querySelector("span:last-child").textContent =
+                config.contact.phoneLabel || config.contact.phone;
+            }
+
+            var email = document.getElementById("contactEmail");
+            if (email && config.contact.email) {
+              email.href = "mailto:" + config.contact.email;
+              email.textContent = config.contact.email;
+            }
+
+            var map = document.getElementById("contactMap");
+            if (map && config.contact.googleMapsEmbedUrl) {
+              map.src = config.contact.googleMapsEmbedUrl;
+            }
+          }
+
+          if (config.formspree && config.formspree.endpoint) {
+            var form = document.getElementById("contactForm");
+            if (form) {
+              form.action = config.formspree.endpoint;
+            }
+          }
+
+          var yearSpan = document.getElementById("footerYear");
+          if (yearSpan) yearSpan.textContent = new Date().getFullYear().toString();
+        }
+
+        /**
+         * Validare de bază pentru formular (fără a trimite datele înapoi în DOM pentru a evita XSS).
+         */
+        function setupFormValidation() {
+          var form = document.getElementById("contactForm");
+          var errorsContainer = document.getElementById("formErrors");
+          var successMessage = document.getElementById("formSuccess");
+
+          if (!form) return;
+
+          form.addEventListener("submit", function (event) {
+            if (!errorsContainer || !successMessage) return;
+
+            errorsContainer.textContent = "";
+            errorsContainer.classList.add("hidden");
+            successMessage.classList.add("hidden");
+
+            var errors = [];
+
+            var name = form.elements.name.value.trim();
+            var email = form.elements.email.value.trim();
+            var phone = form.elements.phone.value.trim();
+            var message = form.elements.message.value.trim();
+            var gdprChecked = form.elements.gdpr.checked;
+
+            // Validări simple
+            if (name.length < 3) errors.push("Numele trebuie să conțină cel puțin 3 caractere.");
+            if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+              errors.push("Introduceți o adresă de e-mail validă.");
+            }
+            if (phone.length < 7) {
+              errors.push("Introduceți un număr de telefon valid.");
+            }
+            if (message.length < 10) {
+              errors.push("Descrierea lucrării este prea scurtă. Adăugați câteva detalii suplimentare.");
+            }
+            if (!gdprChecked) {
+              errors.push("Trebuie să fiți de acord cu prelucrarea datelor pentru a trimite formularul.");
+            }
+
+            if (errors.length > 0) {
+              event.preventDefault();
+              errorsContainer.classList.remove("hidden");
+              errors.forEach(function (err) {
+                var p = document.createElement("p");
+                p.textContent = err;
+                errorsContainer.appendChild(p);
+              });
+              return;
+            }
+
+            // Sanitizare înainte de trimitere (nu scriem înapoi în DOM)
+            form.elements.name.value = sanitizeString(name);
+            form.elements.email.value = sanitizeString(email);
+            form.elements.phone.value = sanitizeString(phone);
+            form.elements.message.value = sanitizeString(message);
+          });
+        }
+
+        /**
+         * Meniu mobil simplu
+         */
+        function setupMobileMenu() {
+          var toggle = document.getElementById("mobileMenuToggle");
+          var menu = document.getElementById("mobileMenu");
+          if (!toggle || !menu) return;
+
+          toggle.addEventListener("click", function () {
+            var isHidden = menu.classList.contains("hidden");
+            if (isHidden) {
+              menu.classList.remove("hidden");
+            } else {
+              menu.classList.add("hidden");
+            }
+          });
+
+          menu.addEventListener("click", function (event) {
+            if (event.target.tagName === "A") {
+              menu.classList.add("hidden");
+            }
+          });
+        }
+
+        document.addEventListener("DOMContentLoaded", function () {
+          populateContent();
+          setupFormValidation();
+          setupMobileMenu();
+        });
+      })();
+    </script>
+  </body>
+</html>
+
