@@ -85,6 +85,20 @@ window.siteConfig = {
         ],
         price: "De la 15–25 lei/ml (plintă, manoperă).",
       },
+	  {
+        title: "Montaj parchet stratificat Herringbone",
+        description:
+          "Montaj profesional pentru parchet stratificat în model Herringbone (os de pește), realizat cu atenție maximă la aliniere, simetrie și stabilitate, ideal pentru spații elegante și finisaje premium.",
+        details: [
+          "Verificarea și pregătirea suportului pentru planeitate perfectă.",
+		  "Trasarea axelor de montaj pentru un model simetric și corect orientat.",
+		  "Așezarea plăcilor în unghiuri precise, cu rosturi uniforme.",
+		  "Fixare prin lipire integrală pentru durabilitate și confort acustic.",
+		  "Tăieturi fine la perimetru și în zonele dificile.",
+		  "Montaj plinte MDF sau lemn masiv pentru un aspect complet."
+        ],
+        price: "De la 80–120 lei/m² (manoperă).",
+      },
       {
         title: "Consultanță în alegerea materialelor",
         description:
@@ -147,6 +161,7 @@ window.siteConfig = {
         value: "De la 70–110 lei/m² (manoperă, fără materiale de finisaj).",
       },
       { label: "Montaj plintă", value: "De la 15–25 lei/ml (manoperă, fără plintă)." },
+	  { label: "Montaj parchet stratificat Herringbone", value: "De la 80–120 lei/m² (manoperă)." },
     ],
   },
 
